@@ -16,14 +16,14 @@ def division(x, y):
         return "Error! cannot divide by zero"
     return x / y
 
-def floordivision(x, y):
+def floor_division(x, y):
     """floor divide first with second"""
     if y == 0:
         return "Error! cannot divide by zero"
     return x // y
 
 def calculator():
-    message = "Simple calculator sorted"
+    message = "Simple calculator started"
     print(message)
     
     while True:
@@ -32,7 +32,7 @@ def calculator():
         print("2. subtract")
         print("3. multiply")
         print("4. division")
-        print("5. floordivision")
+        print("5. floor_division")
         print("6. exit")
         
         choice = input("Choose your operation (1/2/3/4/5/6): ")
@@ -64,7 +64,7 @@ def calculator():
                         result = division(num1, num2)
                         operation_sign = "/"
                     case '5':
-                        result = floordivision(num1, num2)
+                        result = floor_division(num1, num2)
                         operation_sign = "//"
                 
                 # This print statement must sit outside the inner match-case 
